@@ -8,8 +8,8 @@ Aplicação web para simulação de monitoramento de tráfego de rede em uma inf
 
 - Registro de dispositivos com IP, nome e taxa de tráfego simulada (em Mbps)
 - Visualização em tempo real da lista de dispositivos e status do tráfego:
-  - 🔵 Normal (≤ 50 Mbps)
-  - 🔴 Alto (> 50 Mbps)
+  - 🔵 Normal (< 50 Mbps)
+  - 🔴 Alto (≥ 50 Mbps)
 - Remoção de dispositivos com feedback visual
 - Integração entre frontend e backend via API REST
 - Execução completa via Docker Compose
