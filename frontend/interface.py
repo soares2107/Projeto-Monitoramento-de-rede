@@ -52,7 +52,7 @@ with conteudo.container():
 
             if dispositivos:
                 for d in dispositivos:
-                    d["status"] = "Normal" if d["trafego"] <= 50 else "Alto"
+                    d["status"] = "Normal" if d["trafego"] < 50 else "Alto"
 
                 df = pd.DataFrame(dispositivos)
 
