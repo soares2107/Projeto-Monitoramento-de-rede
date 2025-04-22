@@ -1,0 +1,11 @@
+
+services:
+  monitoramento:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"  # Streamlit
+      - "5000:5000"  # Flask
+    volumes:
+      - ../:/app
